@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>form02</title>
+</head>
+
+<body>
+<form action="action.html" method="post" enctype="multipart/form-data" id="textfile">
+  <p>
+    <label for="textfield">姓名:</label>
+    <input name="textfield" type="text" id="textfield" placeholder="请输入姓名" size="25" maxlength="20">
+  </p>
+  <p>
+    <label for="pwd">密码:</label>
+    <input name="pwd" type="password" id="pwd" placeholder="请输入密码" size="15" maxlength="12">
+  </p>
+  <p>
+    <label for="info">简介:</label>
+    <textarea name="info" cols="50" rows="6" id="info" placeholder="请输入个人介绍"></textarea>
+  </p>
+  <p>
+    <label for="photo">上传照片:</label>
+    <input name="photo" type="file" id="photo">
+  </p>
+  <p> 性别:
+    <input name="gender" type="radio" value="0">
+    男
+    <input name="gender" type="radio" value="1" checked="checked">
+    女 </p>
+  <p> 爱好:
+    <input name="dx1" type="checkbox" id="dx1" value="read">
+    阅读
+    <input name="dx1" type="checkbox" id="dx2" value="run">
+    跑步
+    <input name="dx1" type="checkbox" id="dx3" value="sing">
+    唱歌 </p>
+  <p> 城市：
+    <select name="city" size="3">
+      <option>请选择</option>
+      <option value="city1">北京</option>
+      <option value="city2">上海</option>
+      <option value="city3">广州</option>
+      <option value="city4">深圳</option>
+      <option value="city5">重庆</option>
+      <option value="city6">武汉</option>
+    </select>
+  </p>
+  <p>
+    <input name="submit" type="submit" id="submit" value="提交">
+    <input name="reset" type="reset" id="reset" value="重置">
+    <input name="button" type="button" id="button" value="点击我">
+    <input name="imagebutton" type="image" id="imagebutton" form="textfile" formenctype="multipart/form-data" value="submit" src="image/image-button.png">
+  </p>
+  <p>
+    <input name="hidden" type="hidden" id="hidden" value="这是一个用户注册信息">
+  </p>
+</form>
+</body>
+</html>

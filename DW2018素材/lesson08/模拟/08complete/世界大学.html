@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>世界大学</title>
+<style type="text/css">
+body, html {
+	margin: 0;
+	padding: 0;
+	background-color: #DDDDDD;
+}
+.wrapper {
+	width: 100%;
+	height: 700px;
+	font-size: 3rem;
+}
+.wrapper section {
+  width: calc(100% / 3);
+  height: 100%;
+  float: left;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+  transition-duration: 0.5s;
+  position: relative;
+}
+.wrapper section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+  opacity: 1;
+  transition: 0.3s;
+}
+.wrapper section.sec01 {
+	background-image: url(images/%E5%A4%A7%E5%AD%A61.jpg);
+}
+.wrapper section.sec02 {
+	background-image: url(images/%E5%A4%A7%E5%AD%A62.jpg);
+}
+.wrapper section.sec03 {
+	background-image: url(images/%E5%A4%A7%E5%AD%A63.jpg);
+}
+.wrapper section.sec01, .wrapper section.sec02, .wrapper section.sec03 {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.wrapper:hover section:hover {
+  width: 40%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+.wrapper:hover section:hover::before {
+  opacity: 0;
+}
+.wrapper:hover section:not(:hover) {
+  width: 30%;
+}
+
+.alternative {
+	display: inline-block;
+	top: 40%;
+	left: 50%;
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-family: "华文楷体";
+	letter-spacing: 0.08em;
+	line-height: 1;
+	font-size:5.0rem;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.6);
+	background: rgba(0, 0, 0, 0.4);
+	padding: 0.6em 1em;
+}
+.alternative a {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  display: block;
+  padding: 0.6em 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+.alternative a:hover {
+  background: rgba(255, 255, 255, 0.6);
+  color: #333;
+}
+.nav {
+	width: 60%;
+	height: 70px;
+	float: right;
+	margin-top: 0px;
+	margin-right: 8px;
+	margin-left: 8px;
+	margin-bottom: 8px;
+	text-align: right;
+}
+.nav li {
+	float: left;
+	padding: 25px 25px;
+	display: inline-block;
+}
+.nav li a {
+	text-decoration: none;
+	color: #2A2A2A;
+	font-size: 1.4rem;
+	font-family: "宋体";
+}
+.nav li a:hover{
+	color: #969696;
+	font-size: 1.4rem;
+	font-family: "宋体";
+}
+.tra{
+	width: 100%;
+	height: 200px;
+	background-color: #FFFFFF;
+	margin-top: 80px;
+}
+.tra section.tra01 {
+	width: 30%;
+	height: 160px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	border-right: 2px dashed #5E5E5E;
+	font-family: "华文楷体";
+	font-size: 1.2rem;
+	float: left;
+}
+.tra section.tra02 {
+	width: 30%;
+	height: 160px;
+	padding-top: 40px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-right: 2px dashed #5E5E5E;
+	font-family: "华文楷体";
+	font-size: 2rem;
+	float: left;
+	text-align: center;
+}
+.tra section.tra03 {
+	width: 32%;
+	height: 160px;
+	padding-top: 40px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	font-family: "华文楷体";
+	font-size: 1.8rem;
+	float: left;
+	text-align: center;
+}
+.content-0{
+	font-family: "微软雅黑";
+	font-size: 2.5rem;
+	padding: 20px 0;
+	margin: 40px 0;
+	text-align: center;
+}
+.pokemon {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 300px inset, 0 0 5px grey;
+  transition: box-shadow 1s;
+  float: left;
+  margin: 10px;
+}
+
+.pokemon::after {
+  width: 80%;
+  height: 80%;
+  display: block;
+  white-space: pre;
+  font: 36pt 'sigmar one';
+  color: white;
+  border: 2px solid;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s .5s;
+}
+
+.pokemon:hover {
+  box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+  transition: box-shadow 1s;
+}
+
+.pokemon:hover::after {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+#Harvard {
+	background-image: url(images/%E5%93%88%E4%BD%9B1.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#Harvard::after {
+  content: '哈佛大学';
+}
+
+#Stanford {
+	background-image: url(images/%E6%96%AF%E5%9D%A6%E7%A6%8F.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#Stanford::after {
+  content: '斯坦福大学'
+}
+
+#Yale {
+	background-image: url(images/%E8%80%B6%E9%B2%81.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#Yale::after {
+  content: '耶鲁大学'
+}
+
+#Oxford {
+	background-image: url(images/%E7%89%9B%E6%B4%A5.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#Oxford::after {
+  content: '牛津大学';
+}
+
+#Cambridge {
+	background-image: url(images/%E5%89%91%E6%A1%A5.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#Cambridge::after {
+  content: '剑桥大学'
+}
+
+#Imperial {
+	background-image: url(images/%E5%B8%9D%E5%9B%BD%E7%90%86%E5%B7%A5%E5%AD%A6%E9%99%A22.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#Imperial::after {
+  content: '帝国理工学院'
+}
+
+#Beijing {
+	background-image: url(images/%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#Beijing::after {
+  content: '北京大学';
+}
+
+#Qinghua {
+	background-image: url(images/%E6%B8%85%E5%8D%8E.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#Qinghua::after {
+  content: '清华大学'
+}
+
+#Zhejiang {
+	background-image: url(images/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#Zhejiang::after {
+  content: '浙江大学'
+}
+#wrap {
+  width: 1920px;
+  height: 550px;
+  margin: 0 20px;
+}
+#wrap1 {
+  width: 1920px;
+  height: 500px;
+  margin:0 20px;
+}
+#wrap2 {
+  width: 1920px;
+  height: 500px;
+  margin:0 20px;
+}
+.btn {
+	background-color: #333;
+	margin-top: 20px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	border-radius: 0px;
+	padding: 30px;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.btn:hover, .btn:focus {
+	background-color: #000;
+	color: #fff;
+}
+
+#more {
+	text-align: center;
+}
+#footer {
+	text-align: center;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <section class="sec01"></section>
+  <section class="sec02"></section>
+  <section class="sec03"></section>
+</div>
+<div class="alternative">世界大学一览</div>
+<div class="nav">
+   <div class="nav">
+   <li><a href="#wrapper">主页</a></li>
+   <li><a href="#American">美国大学</a></li>
+   <li><a href="#England">英国大学</a></li>
+   <li><a href="#China">中国大学</a></li>
+   <li><a href="#more">更多</a></li>
+</div>
+</div>
+<div class="tra">
+  <section class="tra01">
+  	大学是传承文明、播种希望的殿堂，也是孕育梦想、创造未来的地方。千百年来，人们不停地追问和追逐着自己的大学理想。在全球化的时代和复杂多变的世界中，大学最需要安静下来，以开放的心态审视自身的定位，在继承中弘扬文化传统，在变革中坚守核心价值，努力促进人类的知识增长与文明发展，不断创新自身的发展模式，不负先贤，不负时代。
+  </section>
+  <section class="tra02"><br>
+  	大学是什么？
+  </section>
+  <section class="tra03">
+  	大学又意味着什么？让我们一起走进它——<br>象牙塔，去世界各地的大学转一转！
+  </section>
+</div>
+<div id="American">
+  <div class="content-0">
+		美国大学
+	</div>
+	<div id="wrap">
+     <div id="Harvard" class="pokemon"></div>
+     <div id="Stanford" class="pokemon"></div>
+     <div id="Yale" class="pokemon"></div>
+    </div>
+</div>
+<div id="England">
+	<div class="content-0">
+		英国大学
+	</div>
+	<div id="wrap1">
+     <div id="Oxford" class="pokemon"></div>
+     <div id="Cambridge" class="pokemon"></div>
+     <div id="Imperial" class="pokemon"></div>
+    </div>
+</div>
+<div id="China">
+	<div class="content-0">
+		中国大学
+	</div>
+	<div id="wrap2">
+     <div id="Beijing"  class="pokemon"></div>
+     <div id="Qinghua" class="pokemon"></div>
+     <div id="Zhejiang" class="pokemon"></div>
+    </div>
+</div>
+<div id="more">
+	<a class="btn" href="#">了解更多</a>
+</div>
+<div id="footer">
+<p>Copyright &copy; lesson08/范例/complete版权所有&nbsp;</p>
+</div>
+</body>
+</html>

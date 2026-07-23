@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-sm-12"  style="background-color:rgba(253,236,178,1.00)">
+      <h2>列1</h2>
+      <div class="row">
+        <div class="col-lg-6">col-lg-6</div>
+        <div class="col-lg-6">col-lg-6</div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-sm-12"  style="background-color:rgba(231,231,231,1.00)">
+      <h2>列2</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4" style="background:rgba(255,206,0,1.00)">
+      <h2>行2-列1</h2>
+    </div>
+    <div class="col-lg-2 col-lg-offset-4" style="background: rgba(196,244,252,1.00)">
+      <h2>行2-列2</h2>
+    </div>
+    <div class="col-lg-2" style="background: rgba(255,201,239,1.00)">
+      <h2>行2-列3</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4" style="background:rgba(255,206,0,1.00)">
+      <h2>行3-列1</h2>
+    </div>
+    <div class="col-lg-4 col-lg-offset-4" style="background: rgba(196,244,252,1.00)">
+      <h2>行3-列2</h2>
+    </div>
+  </div>
+  <div class="row">
+    <p>排序前</p>
+    <div class="col-md-4" style="background: rgba(221,221,221,1.00)">
+      <h2>1</h2>
+    </div>
+    <div class="col-md-8" style="background: rgba(251,217,217,1.00)">
+      <h2>2</h2>
+    </div>
+  </div>
+  <div class="row">
+    <p>排序后</p>
+    <div class="col-md-4 col-md-push-8" style="background: rgba(221,221,221,1.00)">
+      <h2>1</h2>
+    </div>
+    <div class="col-md-8 col-md-pull-4" style="background: rgba(251,217,217,1.00)">
+      <h2>2</h2>
+    </div>
+  </div>
+</div>
+
+<!-- <img src="images/flower.jpg" class="img-responsive" alt=""/> --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

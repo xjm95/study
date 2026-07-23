@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<form>
+  电子邮箱：
+  <input name="email" type="email">
+  <input type="submit" value="验证:">
+  <p> URL地址：
+    <input name="url" type="url">
+    <input type="submit" value="验证:">
+  </p>
+  <p> 输入数字：
+    <input name="number" type="number" max="100" min="1">
+    <input type="submit" value="验证:">
+  </p>
+  <p> 移动滑条：
+    1
+    <input name="range" type="range" id="range" max="100" min="1">
+    100
+    <input id="btn" type="submit" value="提交">
+  </p>
+  <p>选取日期：
+    <input name="name" type="date" id="name">
+  </p>
+
+</form>
+<script>
+	document.getElementById("btn").onclick=function(){
+		alert(document.getElementById('range').value);
+	}
+</script>
+</body>
+</html>

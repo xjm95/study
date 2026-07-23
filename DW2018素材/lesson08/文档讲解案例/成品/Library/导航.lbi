@@ -1,0 +1,32 @@
+<style type="text/css">
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+body,td,th {
+    font-family: "思源黑体 CN Bold";
+    font-weight: bold;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><table width="1096px" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td colspan="5"><img src="../使用库项目/picture.jpg" width="1096" height="117" alt=""/></td>
+    </tr>
+    <tr>
+      <td width="300" height="77"><img src="../使用库项目/logo.png" width="300" height="77" alt=""/></td>
+      <td width="199" height="77" align="center" valign="middle"><a href="#">介绍首页</a></td>
+      <td width="199" height="77" align="center" valign="middle"><a href="#">日志记录</a></td>
+      <td width="199" height="77" align="center" valign="middle"><a href="#">图片视频</a></td>
+      <td width="199" height="77" align="center" valign="middle"><a href="#">生活趣事</a></td>
+    </tr>
+  </tbody>
+</table>

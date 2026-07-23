@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>百分比布局示例</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .header, .nav, .sidebar, .content, .footer {
+    padding: 15px;
+    text-align: center;
+  }
+  .header {
+    background-color: #f8f9fa;
+  }
+  .nav {
+    background-color: #e9ecef;
+  }
+  .sidebar {
+    background-color: #dee2e6;
+    float: left;
+    width: 20%; /* 侧边栏宽度 */
+  }
+  .content {
+    background-color: #fff;
+    margin-left: 20%; /* 内容区域的左边距等于侧边栏宽度 */
+  }
+  .footer {
+    clear: both;
+    background-color: #f8f9fa;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  头部
+</div>
+
+<div class="nav">
+  导航
+</div>
+
+<div class="sidebar">
+  侧边栏
+</div>
+
+<div class="content">
+  文章
+</div>
+
+<div class="footer">
+  页脚
+</div>
+
+</body>
+</html>

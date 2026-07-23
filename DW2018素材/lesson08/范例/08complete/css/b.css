@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+.wrap {
+	width:1900px;
+	height:600px;
+	margin:auto auto;
+	position:relative;
+	overflow:hidden;
+}
+.bigList {
+	width:1919px;
+	height:459px;
+	position:relative;
+	left:60px;
+}
+.bigList li {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.bigList li,.bigList img {
+	width:1780px;
+	height:450px;
+	text-align: center;
+}
+
+.bigList:after {
+	display:block;
+	clear:both;
+}
+.active {
+	border:2px solid red;
+}
+.next,.pre {
+	position:absolute;
+	font-size:20px;
+	top:220px;
+}
+.next {
+	right:30px;
+}
+.pre {
+	left:30px;
+}

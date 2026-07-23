@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+<body>
+<div class="container-fluid well">
+  <div id="form">
+    <h1 class="text-center center-block"><strong>个人信息填写</strong></h1>
+  </div>
+  <form action="action.asp" method="post" class="form-horizontal" autocomplete="on">
+    <div class="form-group">
+      <div class="col-md-4 col-sm-4 col-xs-4 control-label text-right">
+        <label  for="username">用户名</label>
+        <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span></button>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-8 text-left">
+        <input type="text" name="username" class="form-control" required="required" id="username" placeholder="请输入用户名">
+      </div>
+      <div class="coll-md-4 col-sm-2 col-xs-0"></div>
+    </div>
+	  
+	  <div class="form-group">
+		<div class="col-md-4 col-sm-4 col-xs-4 control-label text-right">
+		  <label  for="pwd">密码</label>
+			  <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
+			  
+	    </div>
+		<div class="col-md-4 col-sm-6 col-xs-8 text-left">
+			<input type="password" name="pwd" class="form-control" required="required" id="pwd"  placeholder="请输入密码"></div>
+		 <div class="coll-md-4 col-sm-2 col-xs-0"></div>
+	  </div>
+		
+		<div class="form-group">
+		<div class="col-md-4 col-sm-4 col-xs-4 control-label text-right">
+			  <label  for="repwd">确认密码</label>
+			  <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
+			  
+	    </div>
+		<div class="col-md-4 col-sm-6 col-xs-8 text-left">
+			<input type="password" name="repwd" class="form-control" required="required" id="repwd"  placeholder="再次确认密码"></div>
+		 <div class="coll-md-4 col-sm-2 col-xs-0"></div>
+		</div>
+
+		<div class="form-group">
+		<div class="col-md-4 col-sm-4 col-xs-4 control-label text-right">
+			  <label for="email">电子邮箱</label>
+			  <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon glyphicon-envelope" aria-hidden="true"></span></button>
+			  
+	    </div>
+		<div class="col-md-4 col-sm-6 col-xs-8 text-left">
+		  <input type="email" name="email" class="form-control" required="required" id="email"  placeholder="Dreamweaver@163.com"></div>
+		 <div class="coll-md-4 col-sm-2 col-xs-0"></div>
+		</div>
+      
+		<div class="form-group">
+		<div class="col-md-4 col-sm-4 col-xs-4 control-label text-right">
+			  <label for="tel">联系方式</label>
+			  <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon glyphicon-earphone" aria-hidden="true"></span></button>
+	    </div>
+		<div class="col-md-4 col-sm-6 col-xs-8 text-left">
+		  <input type="tel" name="tel" class="form-control" required="required" id="tel"  placeholder="请输入联系方式"></div>
+		 <div class="coll-md-4 col-sm-2 col-xs-0"></div>
+		</div>
+		
+	  <div class="form-group">
+		<div class="col-md-4 col-sm-4 col-xs-4 control-label text-right">
+			  <label for="file">上传照片</label>
+			  <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon glyphicon-picture" aria-hidden="true"></span></button>
+	    </div>
+		<div class="col-md-4 col-sm-6 col-xs-8 text-left">
+		  <input type="file" name="photo" multiple="multiple" id="file" class="form-control"></div>
+		<div class="coll-md-4 col-sm-2 col-xs-0"></div>
+		</div>
+	  <div class="form-group">
+		<div class="col-md-4 col-sm-4 col-xs-4 control-label text-right">
+			  <label>性别</label>
+			  <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span></button>
+	    </div>
+		<div class="col-md-4 col-sm-6 col-xs-8 text-left h4">
+			<label>
+				<input type="radio" name="gender" value="男">男
+			</label>
+			<label>
+				<input type="radio" name="gender" value="女">女
+			</label>
+		  </div>
+		 <div class="coll-md-4 col-sm-2 col-xs-0"></div>
+		</div>
+		
+		<div class="form-group">
+		<div class="col-md-4 col-sm-4 col-xs-4 control-label text-right">
+			  <label for="address">详细地址</label>
+			  <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+	    </div>
+		<div class="col-md-4 col-sm-6 col-xs-8 text-left">
+		  <input type="text" name="address" class="form-control" required="required" id="address"  placeholder="请输入详细地址"></div>
+		 <div class="coll-md-4 col-sm-2 col-xs-0"></div>
+		</div>
+		
+		<div class="form-group">
+		<div class="col-md-4 col-sm-4 col-xs-4 control-label text-right">
+			  <label for="data1">出生日期</label>
+			  <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon glyphicon-asterisk" aria-hidden="true"></span></button>
+	    </div>
+		<div class="col-md-4 col-sm-6 col-xs-8 text-left">
+		  <input name="data1" type="date" required="required" id="data1" class="form-control"></div>
+		 <div class="coll-md-4 col-sm-2 col-xs-0"></div>
+		</div>
+		
+		<div class="form-group">
+		<div class="col-md-4 col-sm-4 col-xs-4 control-label text-right">
+			  <label for="info">个人简介</label>
+			  <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon glyphicon-file" aria-hidden="true"></span></button>
+	    </div>
+		<div class="col-md-4 col-sm-6 col-xs-8 text-left">
+			<input name="info" type="textarea " id="info" class="form-control" placeholder="请输入个人介绍"></div>
+		 <div class="coll-md-4 col-sm-2 col-xs-0"></div>
+		</div>
+		
+		
+		<div class="form-group">
+		<div class="col-md-4 col-sm-4 col-xs-4 control-label text-right">
+			  <label for="city">所在城市</label>
+			  <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon glyphicon-stats" aria-hidden="true"></span></button>
+	    </div>
+		<div class="col-md-4 col-sm-6 col-xs-8 text-left">
+		  <select name="city" class="form-control">
+          <option>请选择</option>
+          <option value="city1">北京</option>
+          <option value="city2">上海</option>
+          <option value="city3">广州</option>
+          <option value="city4">深圳</option>
+          <option value="city5">重庆</option>
+          <option value="city6">武汉</option>
+        </select>
+		 <div class="coll-md-4 col-sm-2 col-xs-0"></div>
+		</div>
+		</div>
+      <div class="text-center">
+		  <button type="submit" class="btn btn-default">提交表单</button>
+	   	  <button type="reset" class="btn btn-default">重置表单</button>
+      </div>
+	  
+  </form>
+	</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

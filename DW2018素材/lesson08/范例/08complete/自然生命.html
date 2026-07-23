@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>自然生命</title>
+<script src="js/jquery.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/b.css">
+<style type="text/css">
+p {
+	font-size: 14px;
+	line-height: 22.4px;
+	color: #6c7279;
+}
+h1 {
+	font-size: 65px;
+	color: #2d3033;
+}
+h2 {
+	font-size: 40px;
+	color: #505253;
+}
+h3 {
+	font-size: 28px;
+	color: #2d3033;
+	font-weight: 300;
+}
+h4 {
+	font-size: 28px;
+	color: #FFFFFF;
+	font-weight: 300;
+}
+h5 {
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: 300;
+}
+#header-slider {
+	text-align: center;
+	margin: 0px auto;
+}
+#header {
+	width: 30%;
+	height: 70px;
+	margin-top: 8px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	text-align: center;
+	font-size: 60px;
+	color: #747070;
+	font-family: "华文行楷";	
+	float:left;
+}
+
+
+#nav {
+	width: 35%;
+	height: 70px;
+	float: right;
+	margin-top: 8px;
+	margin-right: 8px;
+	margin-left: 8px;
+	margin-bottom: 8px;
+	text-align: right;
+}
+#nav li {
+	float: left;
+	padding: 25px 25px;
+	display: inline-block;
+}
+#nav li a {
+	text-decoration: none;
+	color: #2A2A2A;
+}
+#nav li a:hover{
+	color: #6C7279;
+}
+#content {
+	width: 1800px;
+	height: 450px;
+	background-color: #f2f2f2;
+	margin:0 auto;
+}
+
+#content #content_1 {
+	width: 1800px;
+	font-size: 20px;
+	height: auto;
+}
+#content #content_2 {
+	width: 48%;
+	height: 300px;
+	padding: 65px 50px;
+	margin: 30px;
+	float: left;
+	text-align: center;
+	color: #323232;
+}
+#content #content_3 {
+	width: 13%;
+	height: 300px;
+	margin: 30px;
+	padding:65px 50px;
+	float: left;
+	text-align: center;
+}
+#content #content_4 {
+	width: 11%;
+	height: 300px;
+	padding: 65px 50px;
+	margin: 30px;
+	float: left;
+	text-align: center;
+}
+#content ul li {
+	color: #6C7279;
+	line-height: 30px;
+	display: inline-block;
+}
+#content ul li a{
+	color: #6C7279;
+	line-height: 30px;
+	text-decoration: none;	
+}
+#content ul li a:hover{
+	color: #000000;	
+}
+#pictures {
+	width: 1920px;
+	margin: 0 auto;
+}
+.pokemon {
+  width: 920px;
+  height: 612px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 320px inset, 0 0 5px grey;
+  transition: box-shadow 1s;
+  float: left;
+  margin: 10px;
+}
+
+.pokemon:after {
+  width: 80%;
+  height: 80%;
+  display: block;
+  white-space: pre;
+  font: 36pt 'sigmar one';
+  color: white;
+  border: 2px solid;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s .5s;
+}
+
+.pokemon:hover {
+  box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+  transition: box-shadow 1s;
+}
+
+.pokemon:hover:after {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+#picture-1 {
+	background-image: url(images/portfolio/work-1.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#picture-1:after {
+  content: '生命本没有意义';
+}
+	
+#picture-2 {
+	background-image: url(images/portfolio/work-2.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#picture-2:after {
+  content: '当好自然之子';
+}
+	
+#picture-3{
+	background-image: url(images/portfolio/work-3.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#picture-3:after {
+  content: '恰到好处的爱';
+}
+
+#picture-4{
+	background-image: url(images/portfolio/work-4.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#picture-4:after {
+  content: '信仰是生命的归宿';
+}
+	
+#picture-5{
+	background-image: url(images/portfolio/work-5.jpg);
+	color: rgba(0,0,0,0.3);
+}
+
+#picture-5:after {
+  content: '灵魂只能独行';
+}
+
+#picture-6{
+  background-image: url(images/portfolio/work-6.jpg);
+  color: rgba(0,0,0,0.3);
+}
+
+#picture-6:after {
+  content: '人生贵在行胸臆';
+}
+
+#footer {
+	width: 1920px;
+	height: 100px;
+	background-color: #f2f2f2;
+	float: left;
+	margin:50px 0px 0px 50px;
+}
+#footer #footer-foot {
+	height: 100px;
+	padding: 40px;
+	text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+<div id="header-slider">
+<div id="header">自然生命</div>
+<div id="nav">
+   <li><a href="#header-slider">主页</a></li>
+   <li><a href="#content">一本书</a></li>
+   <li><a href="#pictures">六幅图</a></li>
+   <li><a href="#footer">联系</a></li>
+</div>
+<div class="wrap">
+    <ul class="bigList">
+        <li><img src="images/slider/slid1.jpg" alt="" ></li>
+        <li><img src="images/slider/slid2.jpg"  alt=""></li>
+    </ul>
+    <span class="next">&gt;</span>
+    <span class="pre">&lt;</span>
+</div>
+</div>
+<div id="content">
+  <div id="content_1">
+    <div id="content_2">
+	<h3>我喜欢生命  本来的样子</h3><br>
+     <p>我唯愿保持住一份生命的本色，一份能够安静聆听别的生命，也使别的生命愿意安静聆听的纯真。<br><br>&nbsp;&nbsp;——周国平</p><br>
+      人在世上生活，必须做选择和决定，也和遭遇疑惑、困难、挫折，皆需要力量的支持。<br><br>在一切力量中，最不可缺少一种内在的力量，就是觉醒。觉醒是人人可以开发和拥有的力量，也是人生最根本和更重要的力量。<br>
+    </div>
+  </div>
+<div id="content_3">
+	  <h3>目录</h3><br>
+          <ul>
+            <li><a href="#">生命本没有意义</a></li><br>
+            <li><a href="#">当好自然之子</a></li><br>
+            <li><a href="#">恰到好处的爱</a></li><br>
+            <li><a href="#">信仰是生命的归宿</a></li><br>
+            <li><a href="#">灵魂只能独行</a></li><br>
+            <li><a href="#">思考死，有意义的徒劳</a></li><br>
+            <li><a href="#">成为你自己</a></li><br>
+          </ul>
+</div>
+<div id="content_4">
+	<h3>人生的三个觉醒</h3><br><br><br>
+          <ul>
+            <li><a href="#">生命的觉醒</a></li><br>
+            <li><a href="#">自我的觉醒</a></li><br>
+            <li><a href="#">灵魂的觉醒</a></li><br>
+          </ul>
+</div>
+</div>
+<div id="pictures">
+  <div id="picture-1" class="pokemon"></div>
+  <div id="picture-2" class="pokemon"> </div>
+  <div id="picture-3" class="pokemon"> </div>
+  <div id="picture-4" class="pokemon"> </div>
+  <div id="picture-5" class="pokemon"> </div>
+  <div id="picture-6" class="pokemon"> </div>
+</div>
+<div id="footer">
+  <div id="footer-foot">
+      <p>Copyright &copy; lesson08/范例/complete版权所有&nbsp;</p>
+  </div>
+</div>
+</body>
+</html>
